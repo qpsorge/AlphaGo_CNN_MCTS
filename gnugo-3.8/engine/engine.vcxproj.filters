@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\aftermath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\board.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\boardlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\breakin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\clock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\combination.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\dragon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\endgame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\filllib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\fuseki.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\genmove.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\globals.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\handicap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\influence.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\matchpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\montecarlo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\move_reasons.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\movelist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\optics.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\oracle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\owl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\persistent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\printutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\readconnect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\reading.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\semeai.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\sgfdecide.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\sgffile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\shapes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\showbord.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\surround.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\unconditional.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\value_moves.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\worm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1B3C864A-6411-3662-A7E2-DD87F0FBB4DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

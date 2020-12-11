@@ -1,0 +1,273 @@
+Determining if files sys/times.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_c0863.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  HAVE_SYS_TIMES_H.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c0863.dir\Debug\\" /Fd"cmTC_c0863.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIMES_H.c"
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIMES_H.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'sys/times.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_c0863.vcxproj]
+
+
+Source:
+/* */
+#include <sys/times.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/time.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_1eefa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  HAVE_SYS_TIME_H.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1eefa.dir\Debug\\" /Fd"cmTC_1eefa.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c"
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'sys/time.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_1eefa.vcxproj]
+
+
+Source:
+/* */
+#include <sys/time.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/time.h;time.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_a9e59.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  TIME_WITH_SYS_TIME.c
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\TIME_WITH_SYS_TIME.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'sys/time.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_a9e59.vcxproj]
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9e59.dir\Debug\\" /Fd"cmTC_a9e59.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\TIME_WITH_SYS_TIME.c"
+
+
+Source:
+/* */
+#include <sys/time.h>
+#include <time.h>
+
+
+int main(void){return 0;}
+
+Determining if files unistd.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_ca10f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  HAVE_UNISTD_H.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ca10f.dir\Debug\\" /Fd"cmTC_ca10f.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c"
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'unistd.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_ca10f.vcxproj]
+
+
+Source:
+/* */
+#include <unistd.h>
+
+
+int main(void){return 0;}
+
+Determining if files curses.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_abd70.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  HAVE_CURSES_H.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_abd70.dir\Debug\\" /Fd"cmTC_abd70.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_CURSES_H.c"
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_CURSES_H.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'curses.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_abd70.vcxproj]
+
+
+Source:
+/* */
+#include <curses.h>
+
+
+int main(void){return 0;}
+
+Determining if files glib.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0016e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  HAVE_GLIB_H.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0016e.dir\Debug\\" /Fd"cmTC_0016e.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_GLIB_H.c"
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_GLIB_H.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'glib.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_0016e.vcxproj]
+
+
+Source:
+/* */
+#include <glib.h>
+
+
+int main(void){return 0;}
+
+Determining if files ncurses/curses.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b80b8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  HAVE_NCURSES_CURSES_H.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b80b8.dir\Debug\\" /Fd"cmTC_b80b8.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_NCURSES_CURSES_H.c"
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_NCURSES_CURSES_H.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'ncurses/curses.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_b80b8.vcxproj]
+
+
+Source:
+/* */
+#include <ncurses/curses.h>
+
+
+int main(void){return 0;}
+
+Determining if files ncurses/term.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d1ae4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  HAVE_NCURSES_TERM_H.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d1ae4.dir\Debug\\" /Fd"cmTC_d1ae4.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_NCURSES_TERM_H.c"
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_NCURSES_TERM_H.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'ncurses/term.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_d1ae4.vcxproj]
+
+
+Source:
+/* */
+#include <ncurses/term.h>
+
+
+int main(void){return 0;}
+
+Determining if files term.h exist failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d9cee.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  HAVE_TERM_H.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d9cee.dir\Debug\\" /Fd"cmTC_d9cee.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_TERM_H.c"
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CheckIncludeFiles\HAVE_TERM_H.c(2,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'term.h' : No such file or directory [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_d9cee.vcxproj]
+
+
+Source:
+/* */
+#include <term.h>
+
+
+int main(void){return 0;}
+
+Determining if the function times exists failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b287d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=times /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b287d.dir\Debug\\" /Fd"cmTC_b287d.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: symbole externe non résolu times référencé dans la fonction main [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_b287d.vcxproj]
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\Debug\cmTC_b287d.exe : fatal error LNK1120: 1 externes non résolus [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_b287d.vcxproj]
+
+
+
+Determining if the function usleep exists failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_96e12.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=usleep /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_96e12.dir\Debug\\" /Fd"cmTC_96e12.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: symbole externe non résolu usleep référencé dans la fonction main [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_96e12.vcxproj]
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\Debug\cmTC_96e12.exe : fatal error LNK1120: 1 externes non résolus [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_96e12.vcxproj]
+
+
+
+Determining if the function gettimeofday exists failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_67a4c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gettimeofday /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_67a4c.dir\Debug\\" /Fd"cmTC_67a4c.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: symbole externe non résolu gettimeofday référencé dans la fonction main [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_67a4c.vcxproj]
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\Debug\cmTC_67a4c.exe : fatal error LNK1120: 1 externes non résolus [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_67a4c.vcxproj]
+
+
+
+Determining if the function vsnprintf exists failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_f34c9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=vsnprintf /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f34c9.dir\Debug\\" /Fd"cmTC_f34c9.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: symbole externe non résolu vsnprintf référencé dans la fonction main [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_f34c9.vcxproj]
+MSVCRTD.lib(vsnprintf.obj) : error LNK2001: symbole externe non résolu vsnprintf [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_f34c9.vcxproj]
+MSVCRTD.lib(vsnprintf.obj) : error LNK2001: symbole externe non résolu _vsnprintf [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_f34c9.vcxproj]
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\Debug\cmTC_f34c9.exe : fatal error LNK1120: 2 externes non résolus [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_f34c9.vcxproj]
+
+
+
+Determining if the function _vsnprintf exists failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_236b6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=_vsnprintf /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_236b6.dir\Debug\\" /Fd"cmTC_236b6.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: symbole externe non résolu _vsnprintf référencé dans la fonction main [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_236b6.vcxproj]
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\Debug\cmTC_236b6.exe : fatal error LNK1120: 1 externes non résolus [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_236b6.vcxproj]
+
+
+
+Determining if the function g_vsnprintf exists failed with the following output:
+Change Dir: C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0ef19.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.27.29111 pour x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=g_vsnprintf /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0ef19.dir\Debug\\" /Fd"cmTC_0ef19.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: symbole externe non résolu g_vsnprintf référencé dans la fonction main [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_0ef19.vcxproj]
+C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\Debug\cmTC_0ef19.exe : fatal error LNK1120: 1 externes non résolus [C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\CMakeTmp\cmTC_0ef19.vcxproj]
+
+
+

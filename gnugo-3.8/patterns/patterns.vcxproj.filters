@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\connections.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\helpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\transform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\apatterns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\dpatterns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handipat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fusekipat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\josekidb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mcpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\apatterns.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\dpatterns.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\handipat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\influence.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\barriers.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\endgame.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\conn.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\fusekipat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\aa_attackpat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\owl_vital_apat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\owl_attackpat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\owl_defendpat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\fuseki9.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\fuseki13.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\fuseki19.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\gogo.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\hoshi_keima.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\hoshi_other.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\komoku.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\sansan.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\mokuhazushi.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\takamoku.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\josekidb.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\patterns.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\eyes.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\mcpat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4B534B6-4B53-38B1-BE52-A921C77B7CDC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1B3C864A-6411-3662-A7E2-DD87F0FBB4DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

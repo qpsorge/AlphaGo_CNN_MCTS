@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\play_ascii.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\play_gmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\play_gtp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\play_solo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\play_test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\gmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\gtp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\interface\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1B3C864A-6411-3662-A7E2-DD87F0FBB4DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{91872ADD-AF08-38FD-BB7B-4B9FBC831C95}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>patterns</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">patterns.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">patterns</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">patterns.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">patterns</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">patterns.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">patterns</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">patterns.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">patterns</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\engine;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\sgf;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\apatterns.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating apatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -X attpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/attack.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/apatterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\attack.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\apatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating apatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -X attpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/attack.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/apatterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\attack.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\apatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating apatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -X attpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/attack.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/apatterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\attack.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\apatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating apatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -X attpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/attack.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/apatterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\attack.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\apatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\dpatterns.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating dpatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe defpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/defense.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/dpatterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\defense.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\dpatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating dpatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe defpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/defense.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/dpatterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\defense.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\dpatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating dpatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe defpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/defense.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/dpatterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\defense.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\dpatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating dpatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe defpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/defense.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/dpatterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\defense.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\dpatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\handipat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating handipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -b handipat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/handicap.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/handipat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handicap.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating handipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -b handipat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/handicap.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/handipat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handicap.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating handipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -b handipat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/handicap.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/handipat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handicap.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating handipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -b handipat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/handicap.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/handipat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handicap.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\influence.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating influence.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -c influencepat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/influence.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/influence.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating influence.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -c influencepat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/influence.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/influence.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating influence.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -c influencepat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/influence.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/influence.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating influence.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -c influencepat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/influence.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/influence.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\barriers.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating barriers.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -c -b barrierspat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/barriers.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/barriers.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating barriers.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -c -b barrierspat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/barriers.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/barriers.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating barriers.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -c -b barrierspat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/barriers.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/barriers.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating barriers.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -c -b barrierspat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/barriers.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/barriers.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\endgame.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating endgame.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -b endpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/endgame.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/endgame.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating endgame.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -b endpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/endgame.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/endgame.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating endgame.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -b endpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/endgame.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/endgame.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating endgame.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -b endpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/endgame.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/endgame.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\conn.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating conn.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -c conn -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/conn.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/conn.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating conn.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -c conn -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/conn.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/conn.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating conn.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -c conn -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/conn.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/conn.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating conn.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -c conn -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/conn.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/conn.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\fusekipat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating fusekipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -b fusekipat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fusekipat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fusekipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating fusekipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -b fusekipat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fusekipat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fusekipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating fusekipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -b fusekipat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fusekipat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fusekipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating fusekipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -b fusekipat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fusekipat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fusekipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\aa_attackpat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating aa_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpats.dtr aa_attackpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating aa_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpats.dtr aa_attackpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating aa_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpats.dtr aa_attackpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating aa_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpats.dtr aa_attackpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/aa_attackpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\owl_vital_apat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating owl_vital_apat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apats.dtr owl_vital_apat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating owl_vital_apat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apats.dtr owl_vital_apat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating owl_vital_apat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apats.dtr owl_vital_apat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating owl_vital_apat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apats.dtr owl_vital_apat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_vital_apat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\owl_attackpat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating owl_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpats.dtr owl_attackpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating owl_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpats.dtr owl_attackpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating owl_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpats.dtr owl_attackpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating owl_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpats.dtr owl_attackpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_attackpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\owl_defendpat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating owl_defendpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpats.dtr owl_defendpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating owl_defendpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpats.dtr owl_defendpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating owl_defendpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpats.dtr owl_defendpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating owl_defendpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpats.dtr owl_defendpat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpats.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/owl_defendpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpats.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\fuseki9.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating fuseki9.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 9 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki9.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki9.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating fuseki9.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 9 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki9.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki9.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating fuseki9.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 9 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki9.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki9.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating fuseki9.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 9 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki9.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki9.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\fuseki13.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating fuseki13.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 13 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki13.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki13.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating fuseki13.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 13 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki13.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki13.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating fuseki13.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 13 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki13.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki13.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating fuseki13.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 13 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki13.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki13.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\fuseki19.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating fuseki19.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 19 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki19.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki19.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating fuseki19.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 19 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki19.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki19.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating fuseki19.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 19 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki19.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki19.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating fuseki19.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\uncompress_fuseki.exe 19 C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki19.dbz c &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/fuseki19.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\uncompress_fuseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\gogo.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating gogo.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\joseki.exe JG C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating gogo.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\joseki.exe JG C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating gogo.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\joseki.exe JG C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating gogo.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\joseki.exe JG C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\hoshi_keima.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hoshi_keima.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\joseki.exe JHK C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hoshi_keima.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\joseki.exe JHK C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hoshi_keima.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\joseki.exe JHK C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hoshi_keima.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\joseki.exe JHK C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\hoshi_other.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hoshi_other.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\joseki.exe JHO C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hoshi_other.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\joseki.exe JHO C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hoshi_other.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\joseki.exe JHO C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hoshi_other.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\joseki.exe JHO C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\komoku.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating komoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\joseki.exe JK C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating komoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\joseki.exe JK C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating komoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\joseki.exe JK C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating komoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\joseki.exe JK C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\sansan.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating sansan.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\joseki.exe JS C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating sansan.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\joseki.exe JS C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating sansan.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\joseki.exe JS C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating sansan.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\joseki.exe JS C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\mokuhazushi.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating mokuhazushi.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\joseki.exe JM C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating mokuhazushi.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\joseki.exe JM C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating mokuhazushi.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\joseki.exe JM C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating mokuhazushi.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\joseki.exe JM C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\takamoku.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating takamoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\joseki.exe JT C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating takamoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\joseki.exe JT C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating takamoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\joseki.exe JT C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating takamoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\joseki.exe JT C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.sgf &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.db
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\josekidb.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating josekidb.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -C joseki -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/josekidb.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\josekidb.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating josekidb.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -C joseki -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/josekidb.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\josekidb.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating josekidb.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -C joseki -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/josekidb.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\josekidb.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating josekidb.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -C joseki -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/gogo.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_keima.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/hoshi_other.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/komoku.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/sansan.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mokuhazushi.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/takamoku.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/josekidb.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\gogo.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_keima.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\hoshi_other.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\komoku.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\sansan.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mokuhazushi.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\takamoku.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\josekidb.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\patterns.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating patterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkpat.exe -b pat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns2.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns2.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating patterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkpat.exe -b pat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns2.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns2.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating patterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkpat.exe -b pat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns2.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns2.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating patterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkpat.exe -b pat -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns.db -i C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns2.db -o C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/patterns.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns2.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\eyes.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating eyes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkeyes.exe &lt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/eyes.db &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/eyes.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkeyes.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating eyes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkeyes.exe &lt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/eyes.db &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/eyes.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkeyes.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating eyes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkeyes.exe &lt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/eyes.db &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/eyes.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkeyes.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating eyes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkeyes.exe &lt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/eyes.db &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/eyes.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkeyes.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\CMakeFiles\77da7c1118ac706dd7914d82f434c59f\mcpat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating mcpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(Configuration)\mkmcpat.exe C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_montegnu_classic.db C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_mogo_classic.db C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_uniform.db &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mcpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Debug\mkmcpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mkmcpat.c;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_montegnu_classic.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_mogo_classic.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_uniform.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mcpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating mcpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(Configuration)\mkmcpat.exe C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_montegnu_classic.db C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_mogo_classic.db C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_uniform.db &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mcpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\Release\mkmcpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mkmcpat.c;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_montegnu_classic.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_mogo_classic.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_uniform.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mcpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating mcpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+$(Configuration)\mkmcpat.exe C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_montegnu_classic.db C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_mogo_classic.db C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_uniform.db &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mcpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\MinSizeRel\mkmcpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mkmcpat.c;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_montegnu_classic.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_mogo_classic.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_uniform.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mcpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating mcpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+$(Configuration)\mkmcpat.exe C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_montegnu_classic.db C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_mogo_classic.db C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mc_uniform.db &gt; C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/mcpat.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\RelWithDebInfo\mkmcpat.exe;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mkmcpat.c;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_montegnu_classic.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_mogo_classic.db;C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mc_uniform.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mcpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8 -BC:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8 --check-stamp-file C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8 -BC:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8 --check-stamp-file C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8 -BC:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8 --check-stamp-file C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8 -BC:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8 --check-stamp-file C:/Users/asus/Desktop/Simon/AlphaGo/gnugo-3.8/patterns/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\connections.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\helpers.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\transform.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\apatterns.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\dpatterns.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\handipat.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\influence.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\barriers.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\endgame.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\conn.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fusekipat.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\aa_attackpat.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_vital_apat.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_attackpat.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\owl_defendpat.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki9.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki13.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\fuseki19.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\josekidb.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\patterns.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\eyes.c" />
+    <ClCompile Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mcpat.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\ZERO_CHECK.vcxproj">
+      <Project>{51E5068F-9143-3BDB-BBBD-408B0A7854D9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\joseki.vcxproj">
+      <Project>{310E52E9-2ACC-3353-B33A-46DA04040419}</Project>
+      <Name>joseki</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mkeyes.vcxproj">
+      <Project>{2148C4E1-24F8-33E5-AD10-0CAEBAAFF113}</Project>
+      <Name>mkeyes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mkmcpat.vcxproj">
+      <Project>{1B5657D2-3772-3415-B5AA-19EC86D93C1E}</Project>
+      <Name>mkmcpat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\mkpat.vcxproj">
+      <Project>{E3B4B2F2-91C3-3A2A-817F-BE14BE9670C6}</Project>
+      <Name>mkpat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\asus\Desktop\Simon\AlphaGo\gnugo-3.8\patterns\uncompress_fuseki.vcxproj">
+      <Project>{A904C68A-AD40-38B6-9B55-B945152928B8}</Project>
+      <Name>uncompress_fuseki</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
