@@ -195,8 +195,8 @@ class Board:
         '''
         moves = [m for m in self._empties if not self._is_suicide(m, self._nextPlayer) and 
                 not self._is_super_ko(m, self._nextPlayer)[0]]
-        print("inside board:")
-        print(moves)
+        # print("inside board:")
+        # print(moves)
         moves.append(-1) # We can always ask to pass
         return moves
 
@@ -760,6 +760,3 @@ class Board:
         #'\    <text x="100" y="100" font-size="30" font-color="black"> Hello </text>\
         return board
 
-board = Board()
-print(board)
-board.legal_moves

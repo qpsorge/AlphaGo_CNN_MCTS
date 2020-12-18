@@ -1,12 +1,66 @@
 from Goban import *
 
+def copy_list(liste):
+    
+    # On se limite à 2 cas
+    # if liste[0] == list:
+    #     l1 = len(liste)
+    #     l2 = len(liste[0])
+    #     liste_copy = [[] for _ in range(l1)]
+    #     for i in range(len(liste)):
+    #         for j in range(len(liste[0])):
+    #             liste_copy[i].append(liste[i][j])
+    # else:
+    #     liste_copy = [liste[i] for i in range(len(liste))]
+    liste_copy = [liste[i] for i in range(len(liste))]
+    return liste_copy
+    
+
+def copy_board(board):
+    # On fait en sorte de travailler sur une copie du board et non sur le board directement:
+    # Pour ça, on copie un à un tous les param:
+    board_copy = Board()
+    board_copy._nbWHITE = board._nbWHITE
+    board_copy._nbBLACK = board._nbBLACK
+    board_copy._capturedWHITE = board._capturedWHITE
+    board_copy._capturedBLACK = board._capturedBLACK
+
+    board_copy._nextPlayer = board._nextPlayer
+    board_copy._board = copy_list(board._board)
+
+    board_copy._lastPlayerHasPassed = board._lastPlayerHasPassed
+    board_copy._gameOver = board._lastPlayerHasPassed
+
+    board_copy._stringUnionFind = copy_list(board._stringUnionFind)
+    board_copy._stringLiberties = copy_list(board._stringLiberties)
+    board_copy._stringSizes = copy_list(board._stringSizes)
+
+    board_copy._empties = board._empties
+
+    board_copy._positionHashes = copy_list(board._positionHashes)
+    board_copy._currentHash = board._currentHash
+    board_copy._passHash = board._passHash 
+
+    board_copy._seenHashes = board._seenHashes
+
+    board_copy._historyMoveNames = copy_list(board._historyMoveNames)
+    board_copy._trailMoves = copy_list(board._trailMoves)
+
+    #Building fast structures for accessing neighborhood
+    board_copy._neighbors = copy_list(board._neighbors)
+    board_copy._neighborsEntries = copy_list(board._neighborsEntries)
+
+    return board_copy
+
+
 # Codage du rollout
 # Complete one random playout from node
 class Rollout:
     def __init__(self, node):
         self.node = node
         # On reprend la board du noeud à notre propre compte
-        self._board = node.board
+        self._board = copy_board(node.board)
+
 
     def play_move(self,move):
         # On a un plateau en entrée, maj de toutes les données
@@ -35,16 +89,16 @@ class Rollout:
 
     def score(self):
         """
-        On retourne 1 si victoire des blancs, 0.5 si égalité, 0 sinon
+        On retourne 1 si victoire des noirs, 0.5 si égalité, 0 sinon
         réutilisation de result du GOBAN avec sortie différente
         """
         score = self._board._count_areas()
         score_black = self._board._nbBLACK + score[0]
         score_white = self._board._nbWHITE + score[1]
         if score_white > score_black:
-            return 1
-        elif score_white < score_black:
             return 0
+        elif score_white < score_black:
+            return 1
         else:
             return 0.5
 
@@ -81,9 +135,13 @@ class Node:
 # Test des rollout: On prend des boards de référence et on lance rollout:
 board = Board()
 print(board)
+print(board._board)
 node = Node(board)
 
 # On test sur un board vide....
 roll = Rollout(node)
 resultat = roll.lance_rollout()
-print("Le résultat est :" + str(resultat))
+# print("Le résultat est :" + str(resultat))
+
+
+print(board)
