@@ -1,59 +1,73 @@
 import numpy as np
 from collections import defaultdict
-
 from abc import ABC, abstractmethod
 
 
-class TwoPlayersAbstractGameState(ABC):
+class MonteCarloTreeSearchNode(ABC):
 
-    def game_result(self):
+    def __init__(self, state, parent=None):
         """
-        this property should return:
-         1 if player #1 wins
-        -1 if player #2 wins
-         0 if there is a draw
-         None if result is unknown
-        Returns
-        -------
-        int
-        """
-        pass
-
-    def is_game_over(self):
-        """
-        boolean indicating if the game is over,
-        simplest implementation may just be
-        `return self.game_result() is not None`
-        Returns
-        -------
-        boolean
-        """
-        pass
-
-    def move(self, action):
-        """
-        consumes action and returns resulting TwoPlayersAbstractGameState
         Parameters
         ----------
-        action: AbstractGameAction
+        state : mctspy.games.common.TwoPlayersAbstractGameState
+        parent : MonteCarloTreeSearchNode
+        """
+        self.state = state
+        self.parent = parent
+        self.children = []
+
+    @property
+    @abstractmethod
+    def untried_actions(self):
+        """
         Returns
         -------
-        TwoPlayersAbstractGameState
+        list of mctspy.games.common.AbstractGameAction
         """
         pass
 
-    def get_legal_actions(self):
-        """
-        returns list of legal action at current game state
-        Returns
-        -------
-        list of AbstractGameAction
-        """
+    @property
+    @abstractmethod
+    def q(self):
         pass
 
+    @property
+    @abstractmethod
+    def n(self):
+        pass
+
+    @abstractmethod
+    def expand(self):
+        pass
+
+    @abstractmethod
+    def is_terminal_node(self):
+        pass
+
+    @abstractmethod
+    def rollout(self):
+        pass
+
+    @abstractmethod
+    def backpropagate(self, reward):
+        pass
+
+    def is_fully_expanded(self):
+        return len(self.untried_actions) == 0
+
+    def best_child(self, c_param=1.4):
+        choices_weights = [
+            (c.q / c.n) + c_param * np.sqrt((2 * np.log(self.n) / c.n))
+            for c in self.children
+        ]
+        return self.children[np.argmax(choices_weights)]
+
+    def rollout_policy(self, possible_moves):        
+        return possible_moves[np.random.randint(len(possible_moves))]
 
 
 class TwoPlayersGameMonteCarloTreeSearchNode(MonteCarloTreeSearchNode):
+
     def __init__(self, state, parent=None):
         super().__init__(state, parent)
         self._number_of_visits = 0.
