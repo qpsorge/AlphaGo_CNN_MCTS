@@ -1,6 +1,7 @@
 import numpy as np
 from collections import defaultdict
 from abc import ABC, abstractmethod
+from rollout import Rollout
 
 
 class MonteCarloTreeSearchNode(ABC):
@@ -103,12 +104,16 @@ class TwoPlayersGameMonteCarloTreeSearchNode(MonteCarloTreeSearchNode):
         return self.state.is_game_over()
 
     def rollout(self):
-        current_rollout_state = self.state
-        while not current_rollout_state.is_game_over():
-            possible_moves = current_rollout_state.get_legal_actions()
-            action = self.rollout_policy(possible_moves)
-            current_rollout_state = current_rollout_state.move(action)
-        return current_rollout_state.game_result
+        # On enclenche le rollout
+        roll = Rollout(self.state)
+        resultat = roll.lance_rollout()
+
+        # current_rollout_state = self.state
+        # while not current_rollout_state.is_game_over():
+        #     possible_moves = current_rollout_state.get_legal_actions()
+        #     action = self.rollout_policy(possible_moves)
+        #     current_rollout_state = current_rollout_state.move(action)
+        # return current_rollout_state.game_result
 
     def backpropagate(self, result):
         self._number_of_visits += 1.
