@@ -107,6 +107,7 @@ class TwoPlayersGameMonteCarloTreeSearchNode(MonteCarloTreeSearchNode):
         # On enclenche le rollout
         roll = Rollout(self.state)
         resultat = roll.lance_rollout()
+        return resultat
 
         # current_rollout_state = self.state
         # while not current_rollout_state.is_game_over():
