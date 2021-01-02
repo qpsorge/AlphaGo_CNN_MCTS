@@ -194,11 +194,52 @@ class Board:
         check the return value of the push() function that can return False if the move was illegal due to superKo.
         '''
         moves = [m for m in self._empties if not self._is_suicide(m, self._nextPlayer) and 
-                not self._is_super_ko(m, self._nextPlayer)[0]]
+                not self._is_super_ko(m, self._nextPlayer)[0] and self.libertes_ok(m)]
         # print("inside board:")
         # print(moves)
         moves.append(-1) # We can always ask to pass
         return moves
+        # Un mouvement n'est pas légal si un pion n'a pas de liberté (et ne permet pas d'en récup)
+    
+    def libertes_compte(self, move, already_seen):
+        # 1er temps, libertés basique sans checker récupération d'espace
+        nb_lib = 0
+        already_seen.append(move)
+        # On regarde autour si empty ou même couleur que soit
+        if move % 9 == 0:
+            if move // 9 == 0:
+                autour=[move + 1, move + 9]
+            elif move // 9 == 8:
+                autour=[move + 1,  move - 9]
+            else:
+               autour=[move + 1, move -9,  move + 9]
+        elif move % 9 == 8:
+            if move // 9 == 0:
+                autour=[move - 1, move + 9]
+            elif move // 9 == 8:
+                autour=[move - 1,  move - 9]
+            else:
+               autour=[move - 1, move -9,  move + 9]
+        elif move // 9 == 0:
+            autour=[move + 1, move - 1, move + 9]
+        elif move // 9 == 8:
+            autour=[move + 1, move - 1,  move - 9]
+        else:
+            autour=[move - 1, move + 1, move + 9, move - 9]
+        for lieu in autour:
+            if (self._board[lieu] == self._EMPTY):
+                nb_lib += 1
+            # Dans le cas où on se retrouve entouré de la même couleur, on doit calculé leur libà eux, mais sans revenir sur un pion
+            # déjà compté --> On garde en mémoire les pions déjà vu
+            elif (self._board[lieu] == self.next_player and lieu not in already_seen):
+                nb_lib += self.libertes_compte(lieu, already_seen)
+            already_seen.append(lieu)
+        return nb_lib
+
+    def libertes_ok(self, move):
+        if (self.libertes_compte(move, []) > 0):
+            return True
+        return False
 
     def weak_legal_moves(self):
         '''
