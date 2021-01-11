@@ -133,15 +133,18 @@ class Node:
         self.point = 0
 
 # Test des rollout: On prend des boards de référence et on lance rollout:
+'''
 board = Board()
 print(board)
 print(board._board)
 node = Node(board)
-
+'''
 # On test sur un board vide....
+'''
 roll = Rollout(node)
 resultat = roll.lance_rollout()
+'''
 # print("Le résultat est :" + str(resultat))
 
 
-print(board)
+#print(board)
