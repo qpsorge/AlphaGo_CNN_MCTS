@@ -143,8 +143,10 @@ node = Node(board)
 '''
 roll = Rollout(node)
 resultat = roll.lance_rollout()
+
 '''
+
+#print("let's check the board")
+#print(roll._board)
 # print("Le résultat est :" + str(resultat))
-
-
 #print(board)

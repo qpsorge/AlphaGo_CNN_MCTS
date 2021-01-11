@@ -137,6 +137,3 @@ for node in mcts_tree.nodeList:
 
 # du coup meilleur coup à jouer est : le node du self.nodeList qui a le meilleur node.value
     
-        
-        
-        

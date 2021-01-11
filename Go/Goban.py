@@ -194,11 +194,94 @@ class Board:
         check the return value of the push() function that can return False if the move was illegal due to superKo.
         '''
         moves = [m for m in self._empties if not self._is_suicide(m, self._nextPlayer) and 
-                not self._is_super_ko(m, self._nextPlayer)[0]]
+                not self._is_super_ko(m, self._nextPlayer)[0] and self.libertes_ok(m)]
         # print("inside board:")
         # print(moves)
         moves.append(-1) # We can always ask to pass
         return moves
+        # Un mouvement n'est pas légal si un pion n'a pas de liberté (et ne permet pas d'en récup)
+    
+    def libertes_compte(self, move, already_seen, color):
+        # 1er temps, libertés basique sans checker récupération d'espace
+        nb_lib = 0
+        already_seen.append(move)
+        # On regarde autour si empty ou même couleur que soit
+        if move % 9 == 0:
+            if move // 9 == 0:
+                autour=[move + 1, move + 9]
+            elif move // 9 == 8:
+                autour=[move + 1,  move - 9]
+            else:
+               autour=[move + 1, move -9,  move + 9]
+        elif move % 9 == 8:
+            if move // 9 == 0:
+                autour=[move - 1, move + 9]
+            elif move // 9 == 8:
+                autour=[move - 1,  move - 9]
+            else:
+               autour=[move - 1, move -9,  move + 9]
+        elif move // 9 == 0:
+            autour=[move + 1, move - 1, move + 9]
+        elif move // 9 == 8:
+            autour=[move + 1, move - 1,  move - 9]
+        else:
+            autour=[move - 1, move + 1, move + 9, move - 9]
+        for lieu in autour:
+            if (self._board[lieu] == self._EMPTY):
+                nb_lib += 1
+            # Dans le cas où on se retrouve entouré de la même couleur, on doit calculé leur libà eux, mais sans revenir sur un pion
+            # déjà compté --> On garde en mémoire les pions déjà vu
+            elif (self._board[lieu] == color and lieu not in already_seen):
+                nb_lib += self.libertes_compte(lieu, already_seen)
+            already_seen.append(lieu)
+        return nb_lib
+
+    def libertes_ok(self, move):
+        color = self.next_player
+        if (self.libertes_compte(move, [], color) > 0):
+            return True
+        elif (self.prise_pion(move, color)):
+            return True
+        return False
+
+
+    def prise_pion(self, move, color):
+        # Une autre manière de faire un legal move est de prendre le pion d'un autre
+        # Cela revient à priver de sa liberté un pion ennemi
+        # On regarde donc les liberté de tous les pions adverses qui entoure le pion
+        if color == self._BLACK:
+            color_adverse = self._WHITE
+        else:
+            color_adverse = self._BLACK
+        # On regarde les liberté des pions autour
+        if move % 9 == 0:
+            if move // 9 == 0:
+                autour=[move + 1, move + 9]
+            elif move // 9 == 8:
+                autour=[move + 1,  move - 9]
+            else:
+               autour=[move + 1, move -9,  move + 9]
+        elif move % 9 == 8:
+            if move // 9 == 0:
+                autour=[move - 1, move + 9]
+            elif move // 9 == 8:
+                autour=[move - 1,  move - 9]
+            else:
+               autour=[move - 1, move -9,  move + 9]
+        elif move // 9 == 0:
+            autour=[move + 1, move - 1, move + 9]
+        elif move // 9 == 8:
+            autour=[move + 1, move - 1,  move - 9]
+        else:
+            autour=[move - 1, move + 1, move + 9, move - 9]
+        for pion in autour:
+            if pion == color_adverse:
+                nb_liberte = libertes_compte(move, [], color_adverse)
+                if nb_liberte == 1:
+                    return True
+        return False
+        
+
 
     def weak_legal_moves(self):
         '''
@@ -760,3 +843,38 @@ class Board:
         #'\    <text x="100" y="100" font-size="30" font-color="black"> Hello </text>\
         return board
 
+def copy_board(board):
+    # On fait en sorte de travailler sur une copie du board et non sur le board directement:
+    # Pour ça, on copie un à un tous les param:
+    board_copy = Board()
+    board_copy._nbWHITE = board._nbWHITE
+    board_copy._nbBLACK = board._nbBLACK
+    board_copy._capturedWHITE = board._capturedWHITE
+    board_copy._capturedBLACK = board._capturedBLACK
+
+    board_copy._nextPlayer = board._nextPlayer
+    board_copy._board = copy_list(board._board)
+
+    board_copy._lastPlayerHasPassed = board._lastPlayerHasPassed
+    board_copy._gameOver = board._lastPlayerHasPassed
+
+    board_copy._stringUnionFind = copy_list(board._stringUnionFind)
+    board_copy._stringLiberties = copy_list(board._stringLiberties)
+    board_copy._stringSizes = copy_list(board._stringSizes)
+
+    board_copy._empties = board._empties
+
+    board_copy._positionHashes = copy_list(board._positionHashes)
+    board_copy._currentHash = board._currentHash
+    board_copy._passHash = board._passHash 
+
+    board_copy._seenHashes = board._seenHashes
+
+    board_copy._historyMoveNames = copy_list(board._historyMoveNames)
+    board_copy._trailMoves = copy_list(board._trailMoves)
+
+    #Building fast structures for accessing neighborhood
+    board_copy._neighbors = copy_list(board._neighbors)
+    board_copy._neighborsEntries = copy_list(board._neighborsEntries)
+
+    return board_copy
