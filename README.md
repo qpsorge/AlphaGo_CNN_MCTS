@@ -32,7 +32,9 @@ Après quoi, le joueur de go connaitrait les meilleurs coups à jouer.
 Il aurait alors pu choisir le meilleurs coups parmis les coups légaux.
 
 ### CNN : Alpha_GO_CNN_model.ipynb, cnn_model4prior.h5
-L'idée des noyaux de taille (5,5) vient de papiers implémentant alphaGo ayant de bons résultats.
+L'idée des noyaux de taille (5,5) au début du réseau vient du papier suivant implémentant alphaGo ayant de bons résultats :
+* https://drive.google.com/viewerng/viewer?url=https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf
+* https://jonathan-hui.medium.com/alphago-how-it-works-technically-26ddcc085319
 
 Notre modèle est from scratch : 1 742 865 paramètres.
 
