@@ -55,7 +55,7 @@ Soit Mod((n,n), f) un module constitué d'une convolution2D (f filtres convoluti
 
 
 ### Génie Logiciel
-Classes has been implemented to design the rollout, the MCTS tree & the MCTS nodes :
+Several classes have been implemented to design the rollout, the MCTS tree & the MCTS nodes :
 * Rollout (in rollout.py)
 * MCTSNode (in MCTS.py)
 * MCTSTree (in MCTS.py)
