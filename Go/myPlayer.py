@@ -29,6 +29,7 @@ class myPlayer(PlayerInterface):
             print("Referee told me to play but the game is over!")
             return "PASS" 
         moves = self._board.legal_moves() # Dont use weak_legal_moves() here!
+        #HERE
         #real_proba_moves = cnn_and_nn(self._board, moves)
         #final_moves = echantillonnage(legal_moves,final_moves)
         move = choice(moves) 
