@@ -3,13 +3,14 @@
 Projet réalisé par Gwenaelle Cadic et Quentin Pestre-Sorge
 
 ### Externals requirements
-##### Gnugo
+* Gnugo
 
 ## Work done :
-* Data preprocessing of boards (Shape : (9,9,2))
+* Data preprocessing of boards (separation in binaries feature maps => Shape : (9,9,2) )
 * Data augmentation of boards  (rotations)
 * CNN model training and saved : cnn_model4prior.h5
-* Coding of MCTS (Tree & Nodes) and rollout
+* Coding of MCTS (Tree & Nodes) 
+* Coding of Rollout
 ## Possible improvements :
 * Data augmentation (symmetry)
 * Link MCTS to let the player be playable (link our MCTS decision making to myPlayer.py getPlayerMove)
@@ -32,8 +33,10 @@ Il aurait alors pu choisir le meilleurs coups parmis les coups légaux.
 
 ### CNN : Alpha_GO_CNN_model.ipynb, cnn_model4prior.h5
 L'idée des noyaux de taille (5,5) vient de papiers implémentant alphaGo ayant de bons résultats.
-Notre modèle est from scratch : 1 742 865 paramètres
-Soit Mod((n,n), f) un module constitué d'une convolution2D (avec f filtres utilisant des noyaux de taille (n,n) et d'une Batch Normalisation, avec ReLU et same padding
+
+Notre modèle est from scratch : 1 742 865 paramètres.
+
+Soit Mod((n,n), f) un module constitué d'une convolution2D (f filtres convolutionnels avec noyaux de taille (n,n)) suivie d'une Batch Normalisation, fonction d'activation ReLU et same padding.
 ##### Extraction de features
 * 1 x Mod((5,5), 128) 
 * 4 x Mod((5,5), 64) 
